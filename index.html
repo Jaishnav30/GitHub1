@@ -55,6 +55,7 @@
             font-size: 1em;
             cursor: pointer;
             font-weight: bold;
+            margin: 10px;
         }
         button:hover {
             background-color: rgb(17,174,0);
@@ -62,10 +63,11 @@
         h2 {
             color: #333;
             margin-top: 20px;
+            display: none; /* Initially hiding the result text */
         }
         #message {
             font-size: 20px;
-            color: #555;
+            color: blue;
             margin-top: 10px;
         }
         
@@ -78,10 +80,19 @@
         <input type="number" id="numberInput" name="numberInput">
         <button onclick="generateListofNames()">Check</button>
 
-        <h2>Result:</h2>
+        <h2 id="resultText">Result:</h2> <!-- Added an id for the result text -->
         <p id="message"></p>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Add event listener for the "Enter" key press event
+        document.getElementById("numberInput").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                generateListofNames();
+            }
+        });
+    </script>
 </body>
 </html>
+  
