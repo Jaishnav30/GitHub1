@@ -197,7 +197,11 @@ function generateListofNames() {
     "Elizabetta Jenkins",
     "Daniel Perry"]`;
         messageElement.innerHTML = message.replace(/\n/g, '<br>');
+        messageElement.style.color = 'black'; 
     } else {
         messageElement.textContent = 'The number is wrong, try again.';
+        messageElement.style.color = 'red'; 
+        messageElement.style.backgroundColor = 'transparent'; 
     }
+    document.getElementById('resultText').style.display = 'block'; 
 }
