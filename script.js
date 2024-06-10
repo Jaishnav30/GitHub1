@@ -68,7 +68,7 @@ function generateListofNames() {
     "Freddie Price",
     "Lucia Bennett",
     "Isabela Wood",
-    "Bennie Barnes",
+    "Jaxnie Barnes",
     "Lucero Ross",
     "Katasha Henderson",
     "Gabina Coleman",
